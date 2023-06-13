@@ -12,7 +12,6 @@
     grid-template-columns: repeat(19, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: min-content;
-    width: 80%;
     gap: 10px;
   }
 
@@ -50,10 +49,10 @@
 
 @media screen and (max-width: 991px) {
   .hotkeys {
-    width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     height: 50%;
+    width: 100%;
   }
 
   .drum-btn {

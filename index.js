@@ -94,10 +94,7 @@ function viewport() {
   } else if (width < 1400) {
     scale = 450;
   } else {
-    scale = 500;
-  }
-  if (height < 750) {
-    scale = 700;
+    scale = 600;
   }
   scaleDrumkit(scale);
 }
