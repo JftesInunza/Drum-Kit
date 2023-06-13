@@ -1,0 +1,76 @@
+/* 
+#272161 Dark purple
+#654E92 purple
+#6C9BCF sea blue
+#A5C0DD sky blue
+#EBD8B2 beige
+*/
+
+body {
+  background-color: #654e92;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+footer {
+  background-color: rgb(69, 66, 70);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ebd8b2;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  color: #ebd8b2;
+  font-family: "Arvo";
+  margin: 0;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #654e92;
+  height: 100%;
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+area {
+  cursor: pointer;
+}
+
+footer {
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+
+footer img {
+  width: 48px;
+}

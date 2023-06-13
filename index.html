@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drum 🥁 Kit</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/hotkeys.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Click the Drum 🥁 Kit</h1>
+      <div id="drumkit">
+        <img
+          src="./images/drum-kit.png"
+          alt="drum-img"
+          usemap="#drumkit-map"
+          draggable="false"
+        />
+        <map id="drumkit-map" name="drumkit-map">
+          <area
+            shape="poly"
+            coords="188, 219, 283, 221, 302, 233, 300, 257, 284, 284, 196, 273"
+            data-drum-id="snare"
+          />
+          <area shape="circle" coords="306, 159, 50" data-drum-id="tom1" />
+          <area shape="circle" coords="411, 159, 50" data-drum-id="tom2" />
+          <area shape="rect" coords="422, 219, 546, 281" data-drum-id="tom3" />
+          <area shape="circle" coords="350, 325, 71" data-drum-id="kick-bass" />
+          <area shape="rect" coords="414, 23, 532, 79" data-drum-id="crash2" />
+          <area shape="rect" coords="195, 0, 311, 51" data-drum-id="crash1" />
+          <area shape="rect" coords="22, 93, 162, 173" data-drum-id="hihat" />
+        </map>
+      </div>
+
+      <div id="hotkeys" class="hotkeys">
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="hihat"
+          data-hotkey="q"
+        >
+          Hi Hat<br />Q
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="crash1"
+          data-hotkey="w"
+        >
+          Crash 1<br />W
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="crash2"
+          data-hotkey="e"
+        >
+          Crash 2<br />E
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="snare"
+          data-hotkey="d"
+        >
+          Snare<br />D
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="tom1"
+          data-hotkey="k"
+        >
+          Tom 1<br />K
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="tom2"
+          data-hotkey="o"
+        >
+          Tom 2<br />O
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="tom3"
+          data-hotkey="p"
+        >
+          Tom 3<br />P
+        </button>
+        <button
+          class="drum-btn drum-no-hit"
+          data-drum-id="kick-bass"
+          data-hotkey=" "
+        >
+          Kick Bass<br />Space
+        </button>
+      </div>
+    </div>
+
+    <div id="audios">
+      <audio src="./sounds/hihat.mp3" data-drum-id="hihat"></audio>
+      <audio src="./sounds/crash.mp3" data-drum-id="crash1"></audio>
+      <audio src="./sounds/cymbal.mp3" data-drum-id="crash2"></audio>
+      <audio src="./sounds/snare.mp3" data-drum-id="snare"></audio>
+      <audio src="./sounds/tom-1.mp3" data-drum-id="tom1"></audio>
+      <audio src="./sounds/tom-2.mp3" data-drum-id="tom2"></audio>
+      <audio src="./sounds/tom-3.mp3" data-drum-id="tom3"></audio>
+      <audio src="./sounds/kick-bass.mp3" data-drum-id="kick-bass"></audio>
+    </div>
+
+    <footer>
+      <p>Made by Javier Fuentes</p>
+      <a href="https://github.com/JftesInunza/Drum-kit" target="_blank">
+        <img src="./images/github-64px.png" alt="github-icon" />
+      </a>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
