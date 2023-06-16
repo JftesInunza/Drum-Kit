@@ -27,14 +27,17 @@ function initButtons(resources) {
     let area = resources.areas[key];
     let sound = resources.sounds[key];
 
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
       playSound(sound);
     });
-    area.addEventListener("click", () => {
+    area.addEventListener("click", (event) => {
+      event.preventDefault();
       playSound(sound);
       simulateActive(button);
     });
     document.addEventListener("keydown", (event) => {
+      event.preventDefault();
       if (event.key == button.getAttribute("data-hotkey")) {
         playSound(sound);
         simulateActive(button);
